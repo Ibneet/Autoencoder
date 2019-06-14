@@ -1,4 +1,4 @@
-import tensorflow as tf
+rimport tensorflow as tf
 import numpy as np
 import cv2
 import os
@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 train_data = '/Users/ibneetkaur/Desktop/images/train'
 
-def train_data_with_label():
+def refining_img():
     train_images = []
     for i in tqdm(os.listdir(train_data)):
         path = os.path.join(train_data,i)
@@ -28,7 +28,7 @@ from keras.models import Model
 from keras.utils import print_summary
 
 
-training_images = np.asarray(train_data_with_label())
+training_images = np.asarray(refining_img())
 training_images= np.array([i[0] for i in training_images]).reshape(-1,100,100,3)
 
 input_img = Input(shape=(100, 100, 3)) 
