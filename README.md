@@ -1,2 +1,2 @@
 # Autoencoder
-# practice.py is a basic image compressor code.
+# image_compressor.py is a basic image compressor code.
